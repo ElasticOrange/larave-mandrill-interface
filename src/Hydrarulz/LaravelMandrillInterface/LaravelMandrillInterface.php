@@ -112,12 +112,12 @@ class LaravelMandrillInterface extends Mandrill {
         if (!$this->getPretend())
         {
             $result = $this->getInstance()->messages->sendTemplate($templateName, $templateContent, $message, $async);
-            Log::info(var_export($result, true));
         }
         else
         {
             $result = true;
             Log::info(var_export($message, true));
+            Log::info($templateName);
         }
 
         return $result;
@@ -133,7 +133,6 @@ class LaravelMandrillInterface extends Mandrill {
         if (!$this->getPretend())
         {
             $result = $this->getInstance()->messages->send($message);
-            Log::info(var_export($result, true));
         }
         else
         {
