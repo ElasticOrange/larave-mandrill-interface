@@ -1,6 +1,7 @@
 {
     "name": "hydrarulz/laravel-mandrill-interface",
-    "description": "",
+    "description": "Laravel mandrill interface oriented towards send templates. Because Laravel does not support that out of the box", 
+    "license": "MIT",
     "authors": [
         {
             "name": "Daniel Luca",
