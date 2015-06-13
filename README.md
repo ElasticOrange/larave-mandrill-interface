@@ -1,4 +1,4 @@
-laravel-mixpanel
+laravel-mandrill
 ================
 
 Install it with
