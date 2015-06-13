@@ -3,14 +3,20 @@ laravel-mandrill
 
 Install it with
 
-> composer require "hydrarulz/laravel-mandrill-interface:dev-master"
+```
+composer require "hydrarulz/laravel-mandrill-interface:dev-master"
+```
 
 Add the service provider at the end of the `providers` array in file `config/app.php`:
 
-> 'Hydrarulz\LaravelMandrillInterface\LaravelMandrillInterfaceServiceProvider',
+```php
+'Hydrarulz\LaravelMandrillInterface\LaravelMandrillInterfaceServiceProvider',
+```
 
 The service provider will register an interface, but you should also register the alias at the end of the `aliases` array:
-> 'LaravelMandrillInterface' => 'Hydrarulz\LaravelMandrillInterface\Facades\LaravelMandrillInterface',
+```php
+'LaravelMandrillInterface' => 'Hydrarulz\LaravelMandrillInterface\Facades\LaravelMandrillInterface',
+```
 
 Then the you should publish the config file with
 `php artisan vendor:publish`
